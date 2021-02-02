@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="Detay"
+        android:id="@+id/tvDetail"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="Düzenle"
+        android:id="@+id/tvEdit"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="Sil"
+        android:id="@+id/tvDelete"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_height="50dp"/>
+
+</LinearLayout>

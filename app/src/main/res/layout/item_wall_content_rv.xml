@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewData"
+            type="com.turkcell.turkcellsaha.data.model.WallContent" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:id="@+id/cardPost"
+        android:orientation="vertical"
+        android:clipToPadding="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/topView"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:id="@+id/layoutUser"
+                android:layout_height="40dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="32dp"
+                    android:id="@+id/ivUserProfile"
+                    android:background="@drawable/avatar"
+                    android:layout_centerVertical="true"
+                    android:layout_height="32dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/tvUserName"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:text="@{viewData.user.username}"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/ivUserProfile"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="24dp"
+                    android:id="@+id/ivMore"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/ic_more"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="24dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tvContent"
+                android:layout_below="@+id/layoutUser"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:text="@{viewData.text}"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/tvContent"
+                android:id="@+id/ivContent"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:id="@+id/topView"
+                android:background="@color/yellow" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>

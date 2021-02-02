@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Go Arena</string>
+    <string name="title_home">Home</string>
+    <string name="title_chooser">Ay Seçiniz</string>
+    <string name="title_operation">İşlem Seçiniz</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="warning_user_name">Kullanıcı adı boş bırakılamaz</string>
+    <string name="warning_password">Şifre alanı boş bırakılamaz</string>
+    <string name="hint_new_post">İletinizi buraya yazabilirsiniz</string>
+    <string name="warning_new_post">Lütfen dosya veya ileti giriniz</string>
+</resources>
