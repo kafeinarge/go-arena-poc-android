@@ -7,7 +7,7 @@
 
         <variable
             name="viewData"
-            type="com.turkcell.turkcellsaha.data.model.SummaryContent" />
+            type="com.kafein.turkcellsaha.data.model.SummaryContent" />
 
     </data>
 
